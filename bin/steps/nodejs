@@ -27,4 +27,4 @@ ln -s .heroku/vendor/node/bin/npm bin/npm
 
 find
 ls -al bin
-readlink bin/npm
+readlink -f bin/npm
