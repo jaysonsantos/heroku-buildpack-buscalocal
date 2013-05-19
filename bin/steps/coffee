@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-vendor/node/bin/npm install -g coffee
+node/bin/npm install -g coffee
