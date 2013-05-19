@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-npm install -g coffee
+bin/npm install -g coffee
