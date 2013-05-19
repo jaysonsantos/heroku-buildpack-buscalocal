@@ -21,6 +21,8 @@ rm -rf node
 mv $tempdir/$NODE_BASENAME node
 popd
 
+echo $PWD > /dev/stderr
+
 ln -s ../../vendor/node/bin/node .heroku/bin/node
 ln -s ../../vendor/node/bin/node-waf .heroku/bin/node-waf
 ln -s ../../vendor/node/bin/npm .heroku/bin/npm
