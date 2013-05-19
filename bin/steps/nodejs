@@ -26,4 +26,5 @@ ln -s .heroku/vendor/node/bin/node-waf bin/node-waf
 ln -s .heroku/vendor/node/bin/npm bin/npm
 
 find
-bin/node --version
+ls -al bin
+readlink bin/npm
