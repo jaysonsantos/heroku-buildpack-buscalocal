@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
 npm install -g coffee-script
+ln -s ../.heroku/vendor/node/lib/node_modules/coffee-script/bin/coffee bin/coffee
