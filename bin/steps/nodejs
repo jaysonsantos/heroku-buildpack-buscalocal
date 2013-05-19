@@ -21,8 +21,9 @@ rm -rf node
 mv $tempdir/$NODE_BASENAME node
 popd
 ls -al bin
-ln -s ../../vendor/node/bin/
 
 ln -s ../../vendor/node/bin/node bin/node
 ln -s ../../vendor/node/bin/node-waf bin/node-waf
 ln -s ../../vendor/node/bin/npm bin/npm
+
+ls -al bin
