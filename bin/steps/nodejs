@@ -24,7 +24,3 @@ popd
 ln -s ../.heroku/vendor/node/bin/node bin/node
 ln -s ../.heroku/vendor/node/bin/node-waf bin/node-waf
 ln -s ../.heroku/vendor/node/bin/npm bin/npm
-
-find
-ls -al bin
-readlink -f bin/npm
