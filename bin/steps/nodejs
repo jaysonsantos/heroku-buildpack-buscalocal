@@ -20,11 +20,9 @@ pushd $BUILD_DIR/.heroku/vendor
 rm -rf node
 mv $tempdir/$NODE_BASENAME node
 popd
-ls -al bin
-
+tree
 ln -s $BUILD_DIR/vendor/node/bin/node bin/node
 ln -s $BUILD_DIR/vendor/node/bin/node-waf bin/node-waf
 ln -s $BUILD_DIR/vendor/node/bin/npm bin/npm
 
-ls -al bin
 ./bin/node --version
