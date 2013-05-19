@@ -25,4 +25,5 @@ ln -s vendor/node/bin/node bin/node
 ln -s vendor/node/bin/node-waf bin/node-waf
 ln -s vendor/node/bin/npm bin/npm
 
-./bin/node --version
+readlink bin/node
+bin/node --version
