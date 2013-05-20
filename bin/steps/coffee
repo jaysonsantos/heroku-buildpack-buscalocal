@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-npm install -g coffee-script
+/app/.heroku/node/npm install -g coffee-script
