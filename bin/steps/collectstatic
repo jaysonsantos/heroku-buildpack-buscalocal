@@ -17,13 +17,13 @@ if [ ! "$DISABLE_COLLECTSTATIC" ]; then
     set +e
 
     # Check if collectstatic is configured properly.
-    python $MANAGE_FILE collectstatic --dry-run --noinput &> /dev/null && RUN_COLLECTSTATIC=true
+    python $MANAGE_FILE collectstatic --settings=buscalocal.settings.production --dry-run --noinput &> /dev/null && RUN_COLLECTSTATIC=true
 
     # Compile assets if collectstatic appears to be kosher.
     if [ "$RUN_COLLECTSTATIC" ]; then
 
         echo "-----> Collecting static files"
-        python $MANAGE_FILE collectstatic --noinput  2>&1 | sed '/^Copying/d;/^$/d;/^ /d' | indent
+        python $MANAGE_FILE collectstatic --settings=buscalocal.settings.production --noinput  2>&1 | sed '/^Copying/d;/^$/d;/^ /d' | indent
 
         [ $? -ne 0 ] && {
             echo " !     Error running manage.py collectstatic. More info:"
