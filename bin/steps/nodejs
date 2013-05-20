@@ -19,4 +19,4 @@ mkdir -v -p $BUILD_DIR/.heroku/vendor
 pushd $BUILD_DIR/.heroku/vendor
 rm -rf node
 mv $tempdir/$NODE_BASENAME node
-pop
+popd
