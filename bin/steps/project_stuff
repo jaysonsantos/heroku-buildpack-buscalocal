@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 pushd src/buscalocal
-python manage.py compress --settings=buscalocal.settings.production
+python manage.py compress --settings=buscalocal.settings.production --force
 popd
