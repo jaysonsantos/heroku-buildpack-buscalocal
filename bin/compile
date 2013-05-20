@@ -194,7 +194,7 @@ cp -R $CACHE_DIR/gdal .geodjango
 
 # Node Support
 source $BIN_DIR/steps/nodejs
-# source $BIN_DIR/steps/coffee
+source $BIN_DIR/steps/coffee
 
 # Install Mercurial if it appears to be required.
 if (grep -Fiq "hg+" requirements.txt) then

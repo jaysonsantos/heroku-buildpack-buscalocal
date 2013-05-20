@@ -15,8 +15,7 @@ tar -zxvf tmp-nodejs.tar.gz > /dev/null
 rm tmp-nodejs.tar.gz
 popd
 
-mkdir -v -p $BUILD_DIR/.heroku/vendor
-pushd $BUILD_DIR/.heroku/vendor
+pushd $BUILD_DIR/.heroku
 rm -rf node
 mv $tempdir/$NODE_BASENAME node
 popd
