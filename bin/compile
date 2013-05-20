@@ -139,6 +139,9 @@ if [ "$NAME" = "Python/Django" ] && ! [ "$DISABLE_INJECTION" ]; then
   source $BIN_DIR/steps/django
 fi
 
+# Run project stuff
+source $BIN_DIR/steps/project_stuff
+
 # Make virtualenv relocatable.
 set +e
 OUT=$(virtualenv --relocatable .)
