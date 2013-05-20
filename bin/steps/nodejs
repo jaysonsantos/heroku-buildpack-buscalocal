@@ -20,7 +20,7 @@ pushd $BUILD_DIR/.heroku/vendor
 rm -rf node
 mv $tempdir/$NODE_BASENAME node
 popd
-
+find
 ln -s ../.heroku/vendor/node/bin/node bin/node
 ln -s ../.heroku/vendor/node/bin/node-waf bin/node-waf
 ln -s ../.heroku/vendor/node/bin/npm bin/npm
